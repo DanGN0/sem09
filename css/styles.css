@@ -2,70 +2,80 @@
 
 
 /* Exercice 01 */
-    nav li:nth-child(2){
-        margin:0 20px;
-    }
+nav li:nth-child(2){
+    margin:0 20px;
+}
 
 /* Exercice 02 */
-    .exercice02 blockquote::first-letter{
-        color:red;
-        font-size: 50px;
-    }
+.exercice02 blockquote::first-letter{
+    color:red;
+    font-size: 50px;
+}
 
 /* Exercice 03 */
-    .exercice03 blockquote::first-line{
-        font-weight: bold;
-        color:red;
-    }
+.exercice03 blockquote::first-line{
+    font-weight: bold;
+    color:red;
+}
 
 /* Exercice 04 */
-    .exercice04 p:last-of-type{
-        color:red;
-    }
+.exercice04 p:last-of-type{
+    color:red;
+}
 
 /* Exercice 05 */
-    .exercice05 a[href^="https:"]::after{
-        content: 'open_in_new';
-        display: inline-block;
-        font-family: 'Material Icons';
-        font-size: 1.4rem;
-        line-height: 1;
-        margin-left: 5px;
-    }
+.exercice05 a[href^="https:"]::after{
+    content: 'open_in_new';
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-left: 5px;
+}
 
 /* Exercice 06 */
-    .exercice06 li:nth-child(even){
-        background-color:red;
-    }
+.exercice06 li:nth-child(even){
+    background-color:red;
+}
 
 /* Exercice 07 */
 .exercice07 li:nth-child(odd){
-    background-color:red;
+background-color:red;
 }
 
 /* Exercice 08 */
 .exercice08 li:nth-child(-n+3){
-    background-color: red;
+background-color: red;
 }
 
 /* Exercice 09 */
+.exercice09 li:nth-last-child(2){
+background-color: red;
+}
 
 
 /* Exercice 10 */
-
+.exercice10 li:nth-child(-n+22):nth-child(n+15){
+background-color: red;
+}
 
 /* Exercice 11 */
-
+.exercice11 ul{
+    border: 3px solid red;
+}
 
 /* Exercice 12 */
+.exercice12>ul{
+border: 3px solid red;
+}
 
 /* Exercice 13 */
 
 
 /* Exercice 14 */
 
-/* Exercice 15 */
 
+/* Exercice 15 */
 
 /* Exercice 16 */
 
@@ -89,117 +99,117 @@
 
 
 /*----------------------------------------------------------------------------
-    Reset
+Reset
 ----------------------------------------------------------------------------*/
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+box-sizing: border-box;
+font-size: 62.5%;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+box-sizing: inherit;
 }
 
 
 /*------------------------------------------------------------------------------
-   Base
+Base
 ------------------------------------------------------------------------------*/
 
 
 body {
-    background-color: white;
-    color: black;
-    font-size: 1.6rem;
+background-color: white;
+color: black;
+font-size: 1.6rem;
 }
 
 
 ol {
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 
-    max-width: 912px;
+max-width: 912px;
 
-    color: #fff;
-    font: 1em arial, sans-serif;
+color: #fff;
+font: 1em arial, sans-serif;
 
-    list-style: none;
+list-style: none;
 
-    margin: 30px auto 0;
-    padding: 10px 0 10px 10px;
+margin: 30px auto 0;
+padding: 10px 0 10px 10px;
 
-    border: 1px dashed #999;
-    border-radius: 10px;
+border: 1px dashed #999;
+border-radius: 10px;
 }
 
 ol li {
-    text-align: center;
-    font-weight: bold;
+text-align: center;
+font-weight: bold;
 
-    background: #666;
-    padding: 1%;
+background: #666;
+padding: 1%;
 
-    width: 80px;
-    height: 32px;
+width: 80px;
+height: 32px;
 
-    margin: 0 10px 10px 0;
+margin: 0 10px 10px 0;
 }
 
 /*------------------------------------------------------------------------------
-   Mise en page
+Mise en page
 ------------------------------------------------------------------------------*/
 
 .wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
+max-width: 1100px;
+margin: 0 auto;
 }
 
 
 /*------------------------------------------------------------------------------
-   Modules
+Modules
 ------------------------------------------------------------------------------*/
 
 
 /*------------------- Navigation --------------------*/
 
 nav {
-    background-color: #D9CA9C;
-    text-align: center;
+background-color: #D9CA9C;
+text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 
-    list-style: none;
+list-style: none;
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
 nav li a {
-    background-color: #640101;
-    border-bottom: 3px solid transparent;
-    color: #7AB8BF;
-    display: inline-block;
-    padding: 10px 30px;
-    text-decoration: none;
+background-color: #640101;
+border-bottom: 3px solid transparent;
+color: #7AB8BF;
+display: inline-block;
+padding: 10px 30px;
+text-decoration: none;
 }
 
 
 /*------------------- Entête --------------------*/
 
 header {
-    background: #BF2A2A;
-    padding: 63px 0;
+background: #BF2A2A;
+padding: 63px 0;
 }
 
 header h1 {
-    font: 700 8rem 'Lato', sans-serif;
-    color: #F2F2F2;
-    letter-spacing: .1em;
-    margin: 0;
-    text-align: center;
+font: 700 8rem 'Lato', sans-serif;
+color: #F2F2F2;
+letter-spacing: .1em;
+margin: 0;
+text-align: center;
 }
 
 
@@ -207,12 +217,12 @@ header h1 {
 
 
 section {
-    margin-top: 60px;
+margin-top: 60px;
 }
 
 section {
-    margin-bottom: 80px;
-    overflow: auto;
+margin-bottom: 80px;
+overflow: auto;
 }
 
 
@@ -220,11 +230,11 @@ section {
 
 
 footer {
-    background-color: #BF2A2A;
-    padding: 10px 0;
+background-color: #BF2A2A;
+padding: 10px 0;
 }
 
 .exercice13 img {
-    width: 200px;
-    height: 140px;
+width: 200px;
+height: 140px;
 }
